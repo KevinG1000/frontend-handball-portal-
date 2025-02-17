@@ -1,25 +1,60 @@
 /* src/components/LandingPage.css */
 .landing-page {
-    text-align: center;
-    padding: 4rem 2rem; /* Increased padding */
-    background: linear-gradient(to bottom, #e0f7fa 0%, #ffffff 100%); /* Soft blue to white gradient */
-  }
-  
-  .landing-content h1 {
-    font-size: 2.5rem; /* Larger size for emphasis */
-    font-weight: bold; /* Bold font weight */
-    color: #333; /* Dark gray for high contrast */
-    margin-bottom: 1rem; /* Space between heading and paragraph */
-  }
-  
-  .landing-content h1 .highlight {
-    color: #0056b3; /* Bright blue color for 'Everything Handball' */
-  }
-  
-  .landing-content p {
-    font-size: 1.25rem; /* Larger font size for readability */
-    color: #666; /* Light gray for the paragraph */
-    max-width: 600px; /* Max width for optimal reading */
-    margin: auto; /* Centering the paragraph */
-  }
-  
+  text-align: center;
+  padding: 4rem 2rem;
+  background: url('https://www.nycgovparks.org/facilities/images/handball-header.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed; /* Keeps full height consistency */
+  min-height: 100vh; /* Ensures full-screen height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+/* Add a semi-transparent dark overlay for better text contrast */
+.landing-page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.55); /* Slightly darker overlay */
+  z-index: 1;
+}
+
+/* Adjust landing content */
+.landing-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  margin-top: -80px; /* Moves text closer to the nav bar */
+}
+
+/* Improve heading readability */
+.landing-content h1 {
+  font-size: 3.2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+/* Highlighted part of the heading */
+.landing-content h1 .highlight {
+  color: #0099ff; /* More vibrant blue */
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Improve paragraph readability */
+.landing-content p {
+  font-size: 1.3rem;
+  color: #f8f9fa;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.8);
+  margin-top: 10px;
+  max-width: 700px;
+}
