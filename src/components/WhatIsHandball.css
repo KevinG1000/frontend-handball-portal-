@@ -1,0 +1,110 @@
+/* src/components/WhatIsHandball.css */
+.what-is-handball {
+    padding: 2rem;
+    font-family: 'Arial', sans-serif;
+    color: #2c3e50;
+    background: linear-gradient(to bottom, #e0e0e0, #d6d6d6, #cfcfcf);
+    border-radius: 8px;
+    margin: 20px auto;
+    max-width: 960px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+}
+
+/* Revert body background to white */
+body {
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+/* Video container styling */
+.video-container {
+    max-width: 800px;
+    margin: 20px auto;
+    border: 3px solid #34495e;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+/* Stylish headings */
+h1, h2 {
+    color: #0077cc;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Enhance subheadings before lists */
+h3 {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #004a99;
+    text-decoration: underline;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Paragraph styling */
+p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #222; /* Darker shade for better readability */
+    font-size: 1.1rem; /* Slightly bigger for a modern feel */
+}
+
+/* Fix for misaligned stars */
+ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+
+li {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 8px;
+}
+
+li:before {
+    content: '★';
+    color: #0077cc;
+    font-size: 1.2rem;
+    margin-right: 10px;
+}
+
+/* Enhancing 'Basic Rules' & 'Game Formats' */
+.basic-rules-title,
+.game-formats-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #0077cc;
+    text-decoration: underline;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* Slightly elevating list background */
+.basic-rules-list {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Styled links */
+a {
+    color: #0077cc;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #0056a3;
+    text-decoration: underline;
+}

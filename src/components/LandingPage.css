@@ -1,0 +1,25 @@
+/* src/components/LandingPage.css */
+.landing-page {
+    text-align: center;
+    padding: 4rem 2rem; /* Increased padding */
+    background: linear-gradient(to bottom, #e0f7fa 0%, #ffffff 100%); /* Soft blue to white gradient */
+  }
+  
+  .landing-content h1 {
+    font-size: 2.5rem; /* Larger size for emphasis */
+    font-weight: bold; /* Bold font weight */
+    color: #333; /* Dark gray for high contrast */
+    margin-bottom: 1rem; /* Space between heading and paragraph */
+  }
+  
+  .landing-content h1 .highlight {
+    color: #0056b3; /* Bright blue color for 'Everything Handball' */
+  }
+  
+  .landing-content p {
+    font-size: 1.25rem; /* Larger font size for readability */
+    color: #666; /* Light gray for the paragraph */
+    max-width: 600px; /* Max width for optimal reading */
+    margin: auto; /* Centering the paragraph */
+  }
+  
