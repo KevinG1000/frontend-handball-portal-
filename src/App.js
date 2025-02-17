@@ -32,7 +32,7 @@ function NavBar() {
       <Link to="/what-is-handball">What is Handball</Link>
       <Link to="/where-to-play">Where to Play</Link>
       <Link to="/tournaments">Tournaments</Link>
-      <Link to="/login-signup">Login/Sign Up</Link>
+      <Link to="/login-signup">Sign Up | Login</Link>
     </nav>
   );
 }
