@@ -1,0 +1,171 @@
+.where-to-play {
+    padding: 40px 20px;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Add a subtle pattern overlay */
+.where-to-play::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: 
+        radial-gradient(circle at 25px 25px, rgba(255,255,255,0.2) 2%, transparent 0%),
+        radial-gradient(circle at 75px 75px, rgba(255,255,255,0.2) 2%, transparent 0%);
+    background-size: 100px 100px;
+    opacity: 0.3;
+}
+
+.page-title {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 3rem;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+
+.page-title:after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 4px;
+    background: #3498db;
+    margin: 15px auto;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+}
+
+.courts-grid {
+    position: relative; /* Add this to ensure grid appears above the pattern */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+    padding: 20px;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.court-card {
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.court-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.court-image-container {
+    width: 100%;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.court-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+}
+
+.court-card:hover .court-image {
+    transform: scale(1.05);
+}
+
+.court-info {
+    padding: 25px;
+    background: linear-gradient(to bottom, #fff, #f8f9fa);
+}
+
+.court-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin: 0 0 15px 0;
+    color: #2c3e50;
+    line-height: 1.3;
+}
+
+.court-address {
+    font-size: 0.95rem;
+    margin: 0 0 12px 0;
+    color: #3498db;
+    font-weight: 500;
+    text-decoration: none;
+    display: block;
+    transition: color 0.2s ease;
+}
+
+.court-address:hover {
+    color: #2980b9;
+    text-decoration: underline;
+}
+
+/* Add a subtle icon animation on hover */
+.court-address:hover::before {
+    transform: scale(1.1);
+}
+
+.court-description {
+    margin: 0;
+    color: #666;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+/* Add media query for responsive design */
+@media (max-width: 768px) {
+    .courts-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        padding: 10px;
+    }
+
+    .page-title {
+        font-size: 2rem;
+    }
+
+    .court-image-container {
+        height: 250px;
+    }
+}
+
+/* Add a subtle animation to the background pattern */
+@keyframes patternMove {
+    0% {
+        background-position: 0 0;
+    }
+    100% {
+        background-position: 100px 100px;
+    }
+}
+
+.where-to-play::before {
+    animation: patternMove 60s linear infinite;
+}
+
+/* Enhance card contrast against new background */
+.court-card {
+    border: 1px solid rgba(255,255,255,0.1);
+    /* Rest of the card styling remains the same */
+}
+
+/* Add more depth to cards against the new background */
+.court-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}

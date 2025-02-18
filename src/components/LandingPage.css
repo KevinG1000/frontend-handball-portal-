@@ -2,12 +2,13 @@
 .landing-page {
   text-align: center;
   padding: 4rem 2rem;
-  background: url('https://www.nycgovparks.org/facilities/images/handball-header.jpg');
+  background: url('https://i.ibb.co/jkwxL0Rw/Handball-background.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  background-attachment: fixed; /* Keeps full height consistency */
-  min-height: 100vh; /* Ensures full-screen height */
+  /* background-position: center top 75px;  */
+  background-attachment: fixed; 
+  min-height: 100vh; 
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +34,7 @@
   z-index: 2;
   text-align: center;
   padding: 20px;
-  margin-top: -80px; /* Moves text closer to the nav bar */
+  margin-top: -300px; /* Moves text closer to the nav bar */
 }
 
 /* Improve heading readability */
