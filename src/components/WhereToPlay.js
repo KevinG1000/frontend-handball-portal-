@@ -35,7 +35,7 @@ const WhereToPlay = () => {
         },
         {
             name: "Van Cortlandt Park",
-            address: "US-9, Bronx, NY 10471",
+            address: "5910-5970 Broadway, Bronx, NY 10471",
             image: "https://kermitproject.org/newdeal/vancortlandt/vcparkhandball.jpg",
             description: "Historic park featuring multiple handball courts in a beautiful outdoor setting."
         }

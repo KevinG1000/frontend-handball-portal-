@@ -13,7 +13,7 @@
 
 /* Revert body background to white */
 body {
-    background-color: #ffffff;
+    background-color: #161515;
     margin: 0;
     padding: 0;
 }
@@ -30,7 +30,8 @@ body {
 }
 
 /* Stylish headings */
-h1, h2 {
+h1,
+h2 {
     color: #0077cc;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
@@ -51,8 +52,10 @@ h3 {
 p {
     line-height: 1.8;
     margin-bottom: 20px;
-    color: #222; /* Darker shade for better readability */
-    font-size: 1.1rem; /* Slightly bigger for a modern feel */
+    color: #222;
+    /* Darker shade for better readability */
+    font-size: 1.1rem;
+    /* Slightly bigger for a modern feel */
 }
 
 /* Fix for misaligned stars */
@@ -108,6 +111,3 @@ a:hover {
     color: #0056a3;
     text-decoration: underline;
 }
-
-
-

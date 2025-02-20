@@ -14,9 +14,9 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: 
-        radial-gradient(circle at 25px 25px, rgba(255,255,255,0.2) 2%, transparent 0%),
-        radial-gradient(circle at 75px 75px, rgba(255,255,255,0.2) 2%, transparent 0%);
+    background-image:
+        radial-gradient(circle at 25px 25px, rgba(255, 255, 255, 0.2) 2%, transparent 0%),
+        radial-gradient(circle at 75px 75px, rgba(255, 255, 255, 0.2) 2%, transparent 0%);
     background-size: 100px 100px;
     opacity: 0.3;
 }
@@ -30,7 +30,7 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     position: relative;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .page-title:after {
@@ -41,11 +41,12 @@
     background: #3498db;
     margin: 15px auto;
     border-radius: 2px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .courts-grid {
-    position: relative; /* Add this to ensure grid appears above the pattern */
+    position: relative;
+    /* Add this to ensure grid appears above the pattern */
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 40px;
@@ -58,14 +59,14 @@
     border-radius: 15px;
     overflow: hidden;
     background-color: #fff;
-    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .court-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
 
 .court-image-container {
@@ -149,6 +150,7 @@
     0% {
         background-position: 0 0;
     }
+
     100% {
         background-position: 100px 100px;
     }
@@ -160,12 +162,12 @@
 
 /* Enhance card contrast against new background */
 .court-card {
-    border: 1px solid rgba(255,255,255,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
     /* Rest of the card styling remains the same */
 }
 
 /* Add more depth to cards against the new background */
 .court-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
