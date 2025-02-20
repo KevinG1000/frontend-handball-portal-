@@ -11,6 +11,7 @@ function LoginSignUp() {
   const [isSliding, setIsSliding] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
   const navigate = useNavigate();
 
   const handleSubmit = async (e) => {
@@ -95,14 +96,39 @@ function LoginSignUp() {
           )}
           <div className="login-signup-label">
             <label>Password:</label>
-            <input
-              type="password"
-              className="login-signup-input"
-              value={password}
-              onChange={(e) => setPassword(e.target.value)}
-              required
-              disabled={isLoading}
-            />
+            <div style={{
+              display: 'flex',
+              gap: '10px',
+              alignItems: 'flex-start'
+            }}>
+              <input
+                type={showPassword ? "text" : "password"}
+                className="login-signup-input"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                required
+                disabled={isLoading}
+                style={{ flex: 1 }}
+              />
+              <button
+                type="button"
+                onClick={() => setShowPassword(!showPassword)}
+                style={{
+                  padding: '8px 15px',
+                  border: '1px solid #ccc',
+                  borderRadius: '4px',
+                  background: 'white',
+                  cursor: 'pointer',
+                  fontSize: '14px',
+                  width: '70px',
+                  height: '40px',
+                  marginTop: '13px',
+                  alignSelf: 'flex-start'
+                }}
+              >
+                {showPassword ? 'Hide' : 'Show'}
+              </button>
+            </div>
           </div>
           <button
             type="submit"
