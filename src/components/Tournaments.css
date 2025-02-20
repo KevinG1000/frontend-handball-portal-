@@ -16,17 +16,47 @@
     border-left: 4px solid #007bff;
 }
 
-.tournament-card {
-    background: white;
+.tournaments-header {
+    text-align: center;
+    margin: 40px 0;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.9);
+    /* Semi-transparent white background */
     border-radius: 12px;
-    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.tournaments-header h1 {
+    font-size: 2.8em;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #1565C0;
+    /* Darker blue */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.tournaments-header p {
+    font-size: 1.4em;
+    color: #333;
+    font-weight: 500;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.tournament-card {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .tournament-info {
     display: flex;
-    gap: 20px;
+    gap: 30px;
     margin-bottom: 20px;
 }
 
@@ -41,9 +71,28 @@
     flex: 1;
 }
 
+.tournament-details h2 {
+    font-size: 1.8em;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.tournament-details p {
+    font-size: 1.1em;
+    color: #444;
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.tournament-details strong {
+    color: #2196F3;
+    font-weight: 600;
+}
+
 .tournament-card:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .tournament-card h2 {
@@ -75,18 +124,75 @@
 
 /* Comments section styling */
 .comments-section {
-    max-width: 600px;
-    /* Limit width of comments section */
-    margin: 20px 0;
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    padding: 30px 40px;
+    /* Increased horizontal padding */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 700px;
+    /* Reduced width to account for padding */
+    margin-left: 0px;
+    resize: none;
+    box-sizing: border-box;
+}
+
+.comments-section h3 {
+    font-size: 1.5em;
+    color: #1565C0;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .comment-input-container {
-    display: flex;
-    gap: 16px;
-    margin-bottom: 24px;
-    max-width: 600px;
-    /* Match comments section width */
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.comment-input-container textarea {
+    width: 100%;
+    resize: none;
+    height: 60px;
+    /* Fixed height */
+    min-height: 60px;
+    /* Prevent shrinking */
+    max-height: 60px;
+    /* Prevent expanding */
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 14px;
+    line-height: 1.4;
+    font-family: inherit;
+    overflow-y: auto;
+    margin: 0;
+}
+
+/* Prevent any resize attempts */
+.comment-input-container textarea::-webkit-resizer {
+    display: none;
+}
+
+/* Optional: Style the scrollbar */
+.comment-input-container textarea::-webkit-scrollbar {
+    width: 8px;
+}
+
+.comment-input-container textarea::-webkit-scrollbar-track {
+    background: #f1f1f1;
+    border-radius: 4px;
+}
+
+.comment-input-container textarea::-webkit-scrollbar-thumb {
+    background: #c1c1c1;
+    border-radius: 4px;
 }
 
 .avatar {
@@ -110,68 +216,60 @@
 
 .comment-input textarea {
     width: 100%;
-    min-height: 40px;
-    padding: 8px 12px;
-    border: none;
-    border-bottom: 1px solid #e0e0e0;
-    font-size: 14px;
-    resize: none;
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    font-size: 1.1em;
+    background: white;
 }
 
 .comment {
-    max-width: 600px;
-    /* Match comments section width */
-    margin-bottom: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background: #f8f9fa;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
 }
 
 .comment-header {
     display: flex;
     gap: 12px;
-    align-items: flex-start;
+    margin-bottom: 10px;
 }
 
 .comment-content {
-    flex-grow: 1;
+    color: #333;
+    font-size: 1.1em;
 }
 
 .comment-user-info {
     display: flex;
     align-items: center;
-    gap: 8px;
-    margin-bottom: 4px;
+    gap: 10px;
 }
 
 .comment-username {
-    font-size: 13px;
-    font-weight: 500;
-    color: #030303;
+    font-weight: 600;
+    color: #1565C0;
 }
 
 .comment-timestamp {
-    font-size: 12px;
-    color: #606060;
-}
-
-.comment p {
-    margin: 0;
-    font-size: 14px;
-    line-height: 1.4;
-    color: #030303;
+    color: #666;
+    font-size: 0.9em;
 }
 
 .post-comment-button {
-    background: #065fd4;
+    background: #1565C0;
     color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 18px;
-    font-size: 13px;
+    padding: 8px 20px;
+    border-radius: 6px;
     font-weight: 500;
-    cursor: pointer;
+    margin-top: 10px;
 }
 
 .post-comment-button:hover {
-    background: #0356c5;
+    background: #1976D2;
 }
 
 .post-comment-button:disabled {
@@ -323,13 +421,6 @@
     display: block;
     margin-top: 5px;
     font-size: 0.85em;
-}
-
-.comment {
-    background: #f8f9fa;
-    padding: 15px;
-    border-radius: 4px;
-    margin-bottom: 10px;
 }
 
 .comment p {

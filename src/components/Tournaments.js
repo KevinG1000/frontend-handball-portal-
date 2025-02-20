@@ -187,8 +187,10 @@ const Tournaments = () => {
 
   return (
     <div className="tournaments-container">
-      <h1>Upcoming Tournaments</h1>
-      <div className="info-text">Click the links below to register or find out more!</div>
+      <div className="tournaments-header">
+        <h1>Upcoming Tournaments</h1>
+        <p>Click the links below to register or find out more!</p>
+      </div>
 
       {tournaments.map((tournament) => (
         <div key={tournament.id} className="tournament-card">
