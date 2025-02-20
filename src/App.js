@@ -6,6 +6,7 @@ import WhatIsHandball from './components/WhatIsHandball';
 import Tournaments from './components/Tournaments';
 import WhereToPlay from './components/WhereToPlay';
 import LoginSignUp from './components/LoginSignUp';
+import TournamentVideos from './components/TournamentVideos';
 import './App.css';
 
 function NavigationBar() {
@@ -25,6 +26,7 @@ function NavigationBar() {
         <Link to="/what-is-handball" className="nav-link">What is Handball</Link>
         <Link to="/where-to-play" className="nav-link">Where to Play</Link>
         <Link to="/tournaments" className="nav-link">Tournaments</Link>
+        <Link to="/tournament-videos" className="nav-link">Tournament Videos</Link>
       </div>
       <div className="navbar-right">
         {user ? (
@@ -50,6 +52,7 @@ function App() {
           <Route path="/what-is-handball" element={<WhatIsHandball />} />
           <Route path="/where-to-play" element={<WhereToPlay />} />
           <Route path="/tournaments" element={<Tournaments />} />
+          <Route path="/tournament-videos" element={<TournamentVideos />} />
           <Route path="/" element={<LandingPage />} />
         </Routes>
       </div>
