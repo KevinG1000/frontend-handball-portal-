@@ -1,6 +1,7 @@
 # Everything Handball Portal (Frontend)
 
-![Website Demo](https://i.imgur.com/hXdlYve.gif)
+## Demo
+![Website Demo](assets/images/demo.gif)
 
 Frontend repository for the Everything Handball Portal project. This React application provides the user interface for our handball community platform.
 
